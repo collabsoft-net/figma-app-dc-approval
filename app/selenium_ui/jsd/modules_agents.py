@@ -1,6 +1,5 @@
 from selenium_ui.conftest import print_timing
 from selenium_ui.jsd.pages.agent_selectors import UrlManager
-from util.conf import JSD_SETTINGS
 from selenium_ui.jsd.pages.agent_pages import Login, PopupManager, Logout, BrowseProjects, BrowseCustomers
 import random
 
