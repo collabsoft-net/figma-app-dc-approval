@@ -9,17 +9,12 @@ from util.conf import JIRA_SETTINGS
 
 def app_specific_action(webdriver, datasets):
     page = BasePage(webdriver)
-    if datasets['custom_issues']:
-        app_specific_issue = random.choice(datasets['custom_issues'])
-        issue_key = app_specific_issue[0]
 
     @print_timing("selenium_app_custom_action")
     def measure():
 
-        @print_timing("selenium_app_custom_action:view_issue")
+        @print_timing("selenium_app_custom_action:view_issue_figma_designs")
         def sub_measure():
-            page.go_to_url(f"{JIRA_SETTINGS.server_url}/browse/{issue_key}")
-            page.wait_until_visible((By.ID, "summary-val"))  # Wait for summary field visible
-            page.wait_until_visible((By.ID, "ID_OF_YOUR_APP_SPECIFIC_UI_ELEMENT"))  # Wait for you app-specific UI element by ID selector
+            page.wait_until_visible((By.CSS_SELECTOR, "iframe[data-ac-polyfill]"))  # Wait for you app-specific UI element by ID selector
         sub_measure()
     measure()
