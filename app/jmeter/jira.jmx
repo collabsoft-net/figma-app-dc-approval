@@ -9425,7 +9425,7 @@ vars.put(&quot;random_page&quot;, String.valueOf(random_page));</stringProp>
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                      <stringProp name="Argument.value">{&quot;key&quot;:&quot;SAHHTRArafUyUyGuwVB8JV&quot;,&quot;nodeId&quot;:&quot;1521:377&quot;}</stringProp>
+                      <stringProp name="Argument.value">{&quot;key&quot;:&quot;SAHHTRArafUyUyGuwVB8JV&quot;,&quot;nodeId&quot;:&quot;1521:377&quot;,&quot;refId&quot;:&quot;${issue_id}&quot;}</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                     </elementProp>
                   </collectionProp>
