@@ -21,7 +21,7 @@ def app_specific_action(webdriver, datasets):
         def sub_measure():
             page.go_to_url(f"{BITBUCKET_SETTINGS.server_url}/projects/{project_key}/repos/{repo_slug}/browse")
             page.wait_until_visible((By.CSS_SELECTOR, '.aui-navgroup-vertical>.aui-navgroup-inner')) # Wait for repo navigation panel is visible
-            page.wait_until_visible((By.CSS_SELECTOR, 'a[data-web-item-key="net.collabsoft.plugins.stash.gfc:graph]')).click() # Wait for repo navigation panel is visible
+            page.wait_until_visible((By.CSS_SELECTOR, 'a[data-web-item-key="net.collabsoft.plugins.stash.gfc:graph"]')).click() # Wait for repo navigation panel is visible
             page.wait_until_visible((By.CSS_SELECTOR, "iframe[data-ac-polyfill]"))  # Wait for you app-specific UI element by ID selector
         sub_measure()
     measure()
