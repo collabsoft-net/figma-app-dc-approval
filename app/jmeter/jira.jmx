@@ -9247,12 +9247,14 @@ vars.put(&quot;random_page&quot;, String.valueOf(random_page));</stringProp>
             <intProp name="ThroughputController.maxThroughput">1</intProp>
             <stringProp name="ThroughputController.percentThroughput">${perc_standalone_extension}</stringProp>
           </ThroughputController>
+          <!-- FIGMA FOR JIRA -->
           <hashTree>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="jmeter_app_specific_action" enabled="true">
               <boolProp name="TransactionController.includeTimers">false</boolProp>
               <boolProp name="TransactionController.parent">true</boolProp>
             </TransactionController>
             <hashTree>
+              <!-- GET rest/figma/1.0/link -->
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET rest/figma/1.0/link" enabled="true">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
@@ -9291,7 +9293,8 @@ vars.put(&quot;random_page&quot;, String.valueOf(random_page));</stringProp>
                 </ResponseAssertion>
                 <hashTree/>
               </hashTree>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST /rest/figma/1.0/token" enabled="true">
+              <!-- POST /rest/figma/1.0/token -->
+              <!--HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST /rest/figma/1.0/token" enabled="true">
                 <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                   <collectionProp name="Arguments.arguments">
@@ -9336,8 +9339,9 @@ vars.put(&quot;random_page&quot;, String.valueOf(random_page));</stringProp>
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
-              </hashTree>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST /rest/figma/1.0/file" enabled="true">
+              </hashTree-->
+              <!-- POST /rest/figma/1.0/file -->
+              <!--HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST /rest/figma/1.0/file" enabled="true">
                 <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                   <collectionProp name="Arguments.arguments">
@@ -9382,8 +9386,9 @@ vars.put(&quot;random_page&quot;, String.valueOf(random_page));</stringProp>
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
-              </hashTree>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST /rest/figma/1.0/link" enabled="true">
+              </hashTree-->
+              <!-- POST /rest/figma/1.0/link -->
+              <!--HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST /rest/figma/1.0/link" enabled="true">
                 <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                   <collectionProp name="Arguments.arguments">
@@ -9444,9 +9449,10 @@ vars.put(&quot;random_page&quot;, String.valueOf(random_page));</stringProp>
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
-              </hashTree>
+              </hashTree-->
             </hashTree>
           </hashTree>
+          <!-- END FIGMA FOR JIRA -->
           <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="debug sampler" enabled="false">
             <boolProp name="displayJMeterProperties">false</boolProp>
             <boolProp name="displayJMeterVariables">true</boolProp>
