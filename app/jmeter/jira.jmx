@@ -9265,6 +9265,20 @@ vars.put(&quot;random_page&quot;, String.valueOf(random_page));</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                       <stringProp name="Argument.name">refId</stringProp>
                     </elementProp>
+                    <elementProp name="limit" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">10</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">limit</stringProp>
+                    </elementProp>
+                    <elementProp name="offset" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">0</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">offset</stringProp>
+                    </elementProp>
                   </collectionProp>
                 </elementProp>
                 <stringProp name="HTTPSampler.domain"></stringProp>
