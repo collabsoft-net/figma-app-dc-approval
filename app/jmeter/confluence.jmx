@@ -9046,7 +9046,7 @@ vars.put(&quot;p_uuid&quot;, UUID.randomUUID().toString());</stringProp>
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
-              </hashTree-->
+              </hashTree>
               <!-- POST /rest/figma/1.0/file -->
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST /rest/figma/1.0/file" enabled="true">
                 <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
